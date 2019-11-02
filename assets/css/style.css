@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Sansation-bold';
+    src: url('../fonts/sansation_bold-webfont.eot');
+    src: url('../fonts/sansation_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation_bold-webfont.woff2') format('woff2'),
+    url('../fonts/sansation_bold-webfont.woff') format('woff'),
+    url('../fonts/sansation_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('../fonts/sansation_regular-webfont.eot');
+    src: url('../fonts/sansation_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation_regular-webfont.woff2') format('woff2'),
+    url('../fonts/sansation_regular-webfont.woff') format('woff'),
+    url('../fonts/sansation_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    font-family: 'Sansation', Arial;
+    font-size: 18px;
+    color: #fff;
+    min-height: 100%;
+    background: #fe9225 url("../images/bg.png") no-repeat left top;
+}
+
+h1 {
+    font-family: 'Sansation-bold';
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+h1.inner{
+    font-size: 30px;
+}
+
+a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+b, strong{
+    font-family: 'Sansation-bold';
+}
+
+a:hover{
+    color: #994716;
+}
+
+.container {
+    position: relative;
+}
+
+#body-wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 11rem;
+}
+
+#content {
+    padding-bottom: 4.1rem;
+}
+
+
+@media only screen and (max-width: 1279px) {
+    #body-wrapper {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+#leaf-left{
+    width: 470px;
+    height: 189px;
+    background-image: url("../images/leaf_left.png");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#leaf-right{
+    width: 260px;
+    height: 189px;
+    background-image: url("../images/leaf_right.png");
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 479px) {
+    h1{
+        font-size: 30px;
+    }
+    #leaf-left, #leaf-right{
+        display: none;
+    }
+}
+
+.navbar-toggler {
+    border: 2px solid #fff;
+    margin: 5px;
+    float: right;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#login-form{
+    width: 100%;
+    max-width: 460px;
+}
+
+#cookie-bar {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto;
+    line-height: 30px;
+    color: #eeeeee;
+    text-align: center;
+    padding: 16px 0;
+    z-index: 99999;
+}
+
+#cookie-bar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#cookie-bar.fixed.bottom {
+    bottom: 0;
+    top: auto;
+}
+
+#cookie-bar p {
+    margin: 0;
+    padding: 0;
+}
+
+#cookie-bar a {
+    font-family: 'laysbold', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0 6px;
+    margin-left: 8px;
+}
+
+#cookie-bar .cb-enable {
+    background: #c60c0f;
+}
+
+#cookie-bar .cb-enable:hover {
+    background: #c60c0f;
+}
+
+#cookie-bar .cb-disable {
+    background: #990000;
+}
+
+#cookie-bar .cb-disable:hover {
+    background: #bb0000;
+}
+
+#cookie-bar .cb-policy {
+    background: #0033bb;
+}
+
+#cookie-bar .cb-policy:hover {
+    background: #0055dd;
+}
+
+.form-control{
+    border-radius: 0;
+    height: calc(1em + 0.75rem + 2px);
+}
+
+.col-form-label {
+    padding-top: calc(0.1em + 1px);
+}
+
+.btn-primary{
+    border-radius: 10px;
+    background: url("../images/btn_bg.png") 100% 100%;
+    border: 0;
+    padding: 0.3rem 2rem;
+    font-family: 'Sansation-bold';
+}
+
+.navbar{
+    text-transform: none;
+    font-size: 20px;
+    font-family: 'Sansation';
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+nav .navbar-nav li a:hover{
+    color: #994716 !important;
+}
+
+.form-control.error{
+    border-color: #a80400;
+    border-width: 2px;
+}
+
+label.error{
+    color: #a80400;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Sansation-bold';
+}
+
+img#plane{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.reg-text{
+    padding-top: 160px;
+}
+
+a#upload{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#social{
+    margin-top: 140px;
+}
+
+#social a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.upload-content{
+    font-size: 20px;
+}
+
+#multiplier{
+    width: 75px;
+    height: 75px;
+    border: 5px solid #fff;
+    border-radius: 40px;
+    line-height: 68px;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Sansation-bold';
+}
+
+.card{
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
+}
+
+.card-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-title{
+    font-family: 'Sansation-bold';
+    text-decoration: underline;
+}
+
+.card:last-child{
+    border-bottom: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.1rem;
+}

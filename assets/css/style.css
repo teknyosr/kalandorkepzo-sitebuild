@@ -305,7 +305,12 @@ a#upload{
 
 .card-title{
     font-family: 'Sansation-bold';
-    text-decoration: underline;
+    font-size: 36px;
+}
+
+.card-img-top{
+    margin-top: -30px;
+    z-index: -1;
 }
 
 .card:last-child{
@@ -317,4 +322,10 @@ footer{
     bottom: 0;
     width: 100%;
     height: 4.1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    footer{
+        height: 8rem;
+    }
 }

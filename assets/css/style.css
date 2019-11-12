@@ -294,7 +294,6 @@ a#upload{
     border: 0;
     border-radius: 0;
     background: transparent;
-    border-bottom: 2px solid #fff;
     margin-bottom: 30px;
 }
 
@@ -306,6 +305,31 @@ a#upload{
 .card-title{
     font-family: 'Sansation-bold';
     font-size: 36px;
+}
+
+.card-title hr{
+    border: 0;
+    height: 2px;
+    background: #fff;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.card-title.first-title{
+    margin-left: -30px;
+}
+
+.s-list{
+    width: 100%;
+    max-width: 617px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .card-title.first-title{
+        margin-left: 0;
+    }
 }
 
 .card-img-top{
@@ -328,4 +352,43 @@ footer{
     footer{
         height: 8rem;
     }
+}
+
+.carousel{
+    width: 100%;
+    max-width: 488px;
+    margin: 15px auto;
+}
+
+.control-wrapper{
+    width: 260px;
+    margin: 15px auto;
+    text-align: center;
+    position: relative;
+    font-family: 'Sansation-bold';
+}
+
+.control-wrapper i {
+    border: solid #fff;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.right {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
